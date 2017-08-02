@@ -1,0 +1,6 @@
+framework module QuickResponseCode {
+  umbrella header "QuickResponseCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

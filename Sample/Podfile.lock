@@ -1,0 +1,16 @@
+PODS:
+  - QuickResponseCode (1.0.0)
+
+DEPENDENCIES:
+  - QuickResponseCode (from `../`)
+
+EXTERNAL SOURCES:
+  QuickResponseCode:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QuickResponseCode: 43800e7a9e2880c69de518fb76586891d5524c6b
+
+PODFILE CHECKSUM: b5d8c2610cb6f9eb017c8e281c0894b6a2c52ec3
+
+COCOAPODS: 1.2.1

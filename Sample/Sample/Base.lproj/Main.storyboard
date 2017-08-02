@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sVQ-0w-pxP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QRCode-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-Xj-M0x">
+                                <rect key="frame" x="16" y="80" width="167.5" height="167.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ct6-Xj-M0x" secondAttribute="height" id="Zm4-l0-mp2"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="https://github.com/Meniny/QuickResponseCode" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OgQ-fM-9Qu">
+                                <rect key="frame" x="191.5" y="80" width="167.5" height="167.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ct6-Xj-M0x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="2rB-c5-H1J"/>
+                            <constraint firstItem="OgQ-fM-9Qu" firstAttribute="top" secondItem="ct6-Xj-M0x" secondAttribute="top" id="OJp-U6-Eh8"/>
+                            <constraint firstAttribute="trailing" secondItem="OgQ-fM-9Qu" secondAttribute="trailing" constant="16" id="eaG-Qd-TMa"/>
+                            <constraint firstItem="OgQ-fM-9Qu" firstAttribute="leading" secondItem="ct6-Xj-M0x" secondAttribute="trailing" constant="8" id="f8g-yC-aQa"/>
+                            <constraint firstItem="ct6-Xj-M0x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lts-oc-4Ye"/>
+                            <constraint firstItem="OgQ-fM-9Qu" firstAttribute="height" secondItem="ct6-Xj-M0x" secondAttribute="height" id="mac-dm-OMz"/>
+                            <constraint firstItem="OgQ-fM-9Qu" firstAttribute="width" secondItem="ct6-Xj-M0x" secondAttribute="width" id="nMT-MY-uE7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QRCode" id="dsq-DG-GX4">
+                        <barButtonItem key="rightBarButtonItem" title="Generate" id="a5V-Ss-Xrp">
+                            <connections>
+                                <action selector="generate:" destination="BYZ-38-t0r" id="Vo9-mf-0ID"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="ct6-Xj-M0x" id="23p-iG-tep"/>
+                        <outlet property="textView" destination="OgQ-fM-9Qu" id="J4u-Ar-ttj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7EX-IP-yhe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sVQ-0w-pxP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfZ-U6-Uef">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZNT-9k-N73"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKu-fb-Wrs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
