@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/08/02/5981c39c426e3.png" alt="QuickResponseCode">
   <br/><a href="https://cocoapods.org/pods/QuickResponseCode">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.4-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -24,7 +24,7 @@
 
 * iOS 8.0+
 * tvOS 9.0+
-* Xcode 8 with Swift 3
+* Xcode 9 with Swift 4
 
 ## Installation
 
